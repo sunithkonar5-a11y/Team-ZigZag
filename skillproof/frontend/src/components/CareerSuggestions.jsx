@@ -276,3 +276,4 @@ export default function CareerSuggestions({ suggestions, onViewMatches }) {
     </div>
   );
 }
+

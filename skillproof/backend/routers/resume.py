@@ -179,3 +179,4 @@ def get_personalized_suggestions_for_student(
     opportunities = fetch_opportunities_from_db()
     suggestions = generate_personalized_suggestions(student_data, opportunities)
     return suggestions
+

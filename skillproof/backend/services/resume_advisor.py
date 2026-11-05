@@ -361,3 +361,4 @@ def generate_personalized_suggestions(
         "resume_advice": resume_advice,
         "recommended_opportunities": recommended_opps
     }
+
