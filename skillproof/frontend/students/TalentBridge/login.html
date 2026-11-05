@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log In — TalentBridge</title>
+  <!-- Supports both folder structures automatically -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/auth.css" />
+</head>
+<body>
+
+  <div class="auth-split">
+    <!-- Left Branding & Visual Showcase Side -->
+    <div class="auth-visual-side">
+      <div class="auth-visual-inner">
+        <a href="index.html" class="brand-logo light">
+          <div class="logo-mark">TB</div>
+          Talent<span>Bridge</span>
+        </a>
+
+        <div class="auth-quote-box">
+          <h2>Where Student Potential Meets Real Opportunity.</h2>
+          <p>Showcase verified projects, get discovered by engineering teams, and unlock personalized internship & hackathon matches.</p>
+        </div>
+
+        <div class="auth-floating-cards">
+          <div class="afc-card">
+            <div class="afc-badge">✨ 94% Skill Match</div>
+            <h4>Frontend Engineering Intern</h4>
+            <p>TechNova Labs • Remote • HTML, CSS, JavaScript</p>
+          </div>
+
+          <div class="afc-card">
+            <div class="afc-top-row">
+              <h4>Profile Strength</h4>
+              <span class="afc-percent">92%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: 92%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Login Form Side -->
+    <div class="auth-form-side">
+      <div class="auth-form-container">
+        <a href="index.html" class="brand-logo auth-mobile-logo">
+          <div class="logo-mark">TB</div>
+          Talent<span>Bridge</span>
+        </a>
+
+        <div class="auth-header">
+          <h1>Welcome Back</h1>
+          <p>Log in to access your talent profile and matched opportunities.</p>
+        </div>
+
+        <form id="loginForm" novalidate>
+          <div class="form-group" id="emailGroup">
+            <label class="form-label" for="loginEmail">Email Address</label>
+            <input
+              type="email"
+              id="loginEmail"
+              class="form-control"
+              placeholder="student@talentbridge.io"
+              value="student@talentbridge.io"
+              required
+            />
+            <span class="form-error">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-group" id="passwordGroup">
+            <label class="form-label" for="loginPassword">Password</label>
+            <div class="password-input-wrap">
+              <input
+                type="password"
+                id="loginPassword"
+                class="form-control"
+                placeholder="Enter your password"
+                value="password123"
+                required
+              />
+              <button type="button" class="toggle-password" data-target="loginPassword">Show</button>
+            </div>
+            <span class="form-error">Password must be at least 6 characters.</span>
+          </div>
+
+          <div class="auth-options-row">
+            <label class="checkbox-label">
+              <input type="checkbox" id="rememberMe" checked />
+              <span>Remember me</span>
+            </label>
+            <a href="#" id="forgotPasswordLink" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Log In</button>
+        </form>
+
+        <div class="auth-divider">
+          <span>OR</span>
+        </div>
+
+        <p class="auth-switch-text">
+          Don't have a student account yet? <a href="signup.html">Create an Account</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+</html>

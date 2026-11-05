@@ -1,0 +1,112 @@
+/* ==========================================================================
+   EXPLORE TALENT STYLES - explore.html
+   ========================================================================== */
+
+.search-filter-panel {
+  padding: 20px;
+  margin-bottom: 28px;
+}
+
+.large-search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-light);
+  margin-bottom: 16px;
+  transition: var(--transition);
+}
+
+.large-search-wrap:focus-within {
+  background: var(--white);
+  border-color: var(--bright-teal);
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.14);
+}
+
+.large-search-wrap input {
+  width: 100%;
+  font-size: 0.98rem;
+  color: var(--text-dark);
+}
+
+.filter-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.talent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.student-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.student-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--bright-teal);
+}
+
+.student-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.student-avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--bright-teal);
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.student-meta h3 {
+  font-size: 1.12rem;
+  margin-bottom: 2px;
+}
+
+.student-role {
+  font-size: 0.85rem;
+  color: var(--dark-teal);
+  font-weight: 600;
+}
+
+.student-college {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.student-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.student-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-color);
+}
+
+.project-count-pill {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}

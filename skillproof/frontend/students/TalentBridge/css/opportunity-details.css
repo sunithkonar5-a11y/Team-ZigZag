@@ -1,0 +1,141 @@
+/* ==========================================================================
+   OPPORTUNITY DETAILS STYLES - opportunity-details.html
+   ========================================================================== */
+
+.back-nav-row {
+  margin-bottom: 20px;
+}
+
+.details-header-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+  padding: 28px;
+}
+
+.details-header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.details-logo {
+  width: 68px;
+  height: 68px;
+  border-radius: var(--radius-lg);
+  background: var(--navy);
+  color: var(--bright-teal);
+  font-weight: 800;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.details-title-block h1 {
+  font-size: 1.65rem;
+  margin-bottom: 6px;
+}
+
+.details-meta-pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.details-layout {
+  display: grid;
+  grid-template-columns: 1.65fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.details-section-card {
+  margin-bottom: 24px;
+}
+
+.details-section-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+}
+
+.details-list {
+  list-style: disc;
+  padding-left: 20px;
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Personalized Why You Match Card */
+.match-highlight-card {
+  border: 1.5px solid var(--bright-teal);
+  background: linear-gradient(180deg, var(--teal-subtle) 0%, var(--white) 100%);
+}
+
+.prominent-match-score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--teal-border);
+}
+
+.prominent-match-score strong {
+  font-size: 2rem;
+  color: var(--dark-teal);
+  font-weight: 800;
+}
+
+.match-reasons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.match-reason-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--navy);
+}
+
+.match-check {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--dark-teal);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.apply-success-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--teal-subtle);
+  color: var(--dark-teal);
+  border: 2px solid var(--bright-teal);
+  font-size: 1.75rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}

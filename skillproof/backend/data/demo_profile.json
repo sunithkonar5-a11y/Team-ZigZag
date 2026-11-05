@@ -1,0 +1,83 @@
+{
+  "id": 1,
+  "name": "Alex Chen",
+  "github_username": "alexchen-dev",
+  "email": "alex.chen@berkeley.edu",
+  "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+  "bio": "CS Junior at UC Berkeley passionate about full-stack web architectures, type safety, and reactive UI performance. Open source contributor and campus hackathon winner.",
+  "repos_analyzed": 14,
+  "skills": [
+    {
+      "name": "React",
+      "normalized_name": "react",
+      "level": "Advanced",
+      "confidence": 0.94,
+      "evidence": "Authored custom React 18 hooks with useTransition and Suspense in repo 'berkeley-scheduler' (280+ stars). Built declarative state machines for complex form steps.",
+      "source": "github",
+      "category": "framework"
+    },
+    {
+      "name": "TypeScript",
+      "normalized_name": "typescript",
+      "level": "Advanced",
+      "confidence": 0.91,
+      "evidence": "Strict TypeScript codebase with complex generic utilities and zod schema validations in 'type-safe-query'. Zero `any` policy with strictNullChecks enabled.",
+      "source": "github",
+      "category": "language"
+    },
+    {
+      "name": "FastAPI",
+      "normalized_name": "fastapi",
+      "level": "Intermediate",
+      "confidence": 0.85,
+      "evidence": "Built asynchronous REST microservice backend with dependency injection and Pydantic v2 in 'campus-connect-api'. Integrated OAuth2 JWT authentication flow.",
+      "source": "github",
+      "category": "framework"
+    },
+    {
+      "name": "PostgreSQL",
+      "normalized_name": "postgresql",
+      "level": "Intermediate",
+      "confidence": 0.82,
+      "evidence": "Designed schema migrations, indexing strategies, and complex joins using SQLAlchemy and Alembic in production coursework. Optimized queries using EXPLAIN ANALYZE.",
+      "source": "github",
+      "category": "tool"
+    },
+    {
+      "name": "Tailwind CSS",
+      "normalized_name": "tailwind css",
+      "level": "Advanced",
+      "confidence": 0.93,
+      "evidence": "Implemented accessible dark-mode UI design system and responsive grid layouts across 5 client projects with custom color token configuration.",
+      "source": "github",
+      "category": "framework"
+    },
+    {
+      "name": "Docker",
+      "normalized_name": "docker",
+      "level": "Intermediate",
+      "confidence": 0.78,
+      "evidence": "Multi-stage Dockerfile builds reducing artifact size by 65% in 'task-runner-lite'. Maintained local development orchestration with docker-compose.",
+      "source": "github",
+      "category": "tool"
+    },
+    {
+      "name": "Python",
+      "normalized_name": "python",
+      "level": "Intermediate",
+      "confidence": 0.86,
+      "evidence": "Automated data collection scrapers using httpx and BeautifulSoup; integrated backend services with external REST APIs.",
+      "source": "github",
+      "category": "language"
+    },
+    {
+      "name": "REST APIs",
+      "normalized_name": "rest apis",
+      "level": "Advanced",
+      "confidence": 0.9,
+      "evidence": "Published clear OpenAPI/Swagger documentation, standardized error response schemas, and handled client pagination with cursor tokens.",
+      "source": "github",
+      "category": "domain"
+    }
+  ]
+}

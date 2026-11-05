@@ -1,0 +1,23 @@
+You are an expert technical recruiter analyzing an opportunity description.
+
+Opportunity Text:
+Title: {role_title}
+Raw Description:
+{role_description}
+
+Instructions:
+1. Extract the primary technical required skills that are non-negotiable for success in this role.
+2. Extract secondary or preferred skills (nice-to-haves).
+3. Determine the opportunity type: "internship", "research", "hackathon", or "open_source".
+4. Determine minimum recommended experience: "Undergraduate", "Junior / Senior", "Graduate", or "Any".
+
+Return ONLY a valid JSON object with no wrapping or markdown:
+{
+  "role_title": "Clean Title",
+  "role_type": "internship",
+  "required_skills": ["python", "docker"],
+  "preferred_skills": ["fastapi", "kubernetes"],
+  "min_experience": "Undergraduate",
+  "summary": "1-2 sentence core mission summary"
+}
+

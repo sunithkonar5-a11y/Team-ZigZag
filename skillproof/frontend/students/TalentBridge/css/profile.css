@@ -1,0 +1,162 @@
+/* ==========================================================================
+   STUDENT PROFILE STYLES - profile.html
+   ========================================================================== */
+
+.profile-hero-card {
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.profile-banner-strip {
+  height: 110px;
+  background: linear-gradient(90deg, var(--navy) 0%, var(--dark-teal) 100%);
+}
+
+.profile-hero-body {
+  padding: 0 32px 28px;
+}
+
+.profile-header-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: -42px;
+  margin-bottom: 20px;
+}
+
+.profile-user-block {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.profile-large-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--bright-teal);
+  border: 4px solid var(--white);
+  box-shadow: var(--shadow-md);
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.profile-large-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-headline {
+  color: var(--dark-teal);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.profile-submeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.profile-action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.profile-bio {
+  color: var(--text-dark);
+  max-width: 780px;
+  margin-bottom: 18px;
+}
+
+.profile-top-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.details-layout {
+  display: grid;
+  grid-template-columns: 1.65fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.strength-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Interactive Tabs */
+.profile-tabs-bar {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 28px;
+}
+
+.profile-tab-btn {
+  padding: 12px 22px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  border-bottom: 3px solid transparent;
+  transition: var(--transition);
+}
+
+.profile-tab-btn:hover {
+  color: var(--navy);
+}
+
+.profile-tab-btn.active {
+  color: var(--dark-teal);
+  border-bottom-color: var(--bright-teal);
+}
+
+.profile-tab-content {
+  display: none;
+}
+
+.profile-tab-content.active {
+  display: block;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.achievement-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.achievement-medal {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-md);
+  background: var(--teal-subtle);
+  color: var(--dark-teal);
+  border: 1px solid var(--teal-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}

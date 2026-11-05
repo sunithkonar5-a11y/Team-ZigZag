@@ -1,0 +1,169 @@
+/* ==========================================================================
+   OPPORTUNITIES PAGE STYLES - opportunities.html
+   ========================================================================== */
+
+.opp-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  margin-bottom: 28px;
+}
+
+.opp-search-bar input {
+  width: 100%;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.opportunities-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.filter-sidebar {
+  padding: 22px;
+}
+
+.filter-sidebar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.reset-filters-btn {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--dark-teal);
+}
+
+.filter-group {
+  margin-bottom: 24px;
+}
+
+.filter-group:last-child {
+  margin-bottom: 0;
+}
+
+.filter-group h4 {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.filter-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.filter-check input {
+  accent-color: var(--dark-teal);
+  width: 16px;
+  height: 16px;
+}
+
+.filter-skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.filter-skill-btn {
+  padding: 5px 11px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px solid var(--border-color);
+  background: var(--bg-light);
+  color: var(--navy);
+  transition: var(--transition);
+}
+
+.filter-skill-btn.active {
+  background: var(--dark-teal);
+  color: var(--white);
+  border-color: var(--dark-teal);
+}
+
+/* Right Cards List */
+.opportunities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.opp-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px;
+}
+
+.opp-card:hover {
+  border-color: var(--bright-teal);
+  transform: translateY(-2px);
+}
+
+.opp-card-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.opp-org-logo {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-md);
+  background: var(--navy);
+  color: var(--bright-teal);
+  font-weight: 800;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.opp-card-body h3 {
+  font-size: 1.18rem;
+  margin-bottom: 4px;
+}
+
+.opp-submeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.opp-card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.opp-card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.deadline-text {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}

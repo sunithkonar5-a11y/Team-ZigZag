@@ -1,0 +1,218 @@
+/* ==========================================================================
+   DASHBOARD STYLES - dashboard.html
+   ========================================================================== */
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stat-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.stat-value.teal {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--dark-teal);
+}
+
+.stat-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+.stat-icon.teal {
+  background: var(--teal-subtle);
+  color: var(--dark-teal);
+}
+
+.stat-icon.navy {
+  background: rgba(11, 31, 51, 0.08);
+  color: var(--navy);
+}
+
+.stat-big-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin: 8px 0 4px;
+}
+
+.stat-Caption {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+/* Dashboard Two-Column Section */
+.dashboard-columns {
+  display: grid;
+  grid-template-columns: 1.65fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.section-title-row h2 {
+  font-size: 1.25rem;
+}
+
+.section-title-row h3 {
+  font-size: 1.05rem;
+}
+
+.link-teal {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--dark-teal);
+}
+
+.link-teal:hover {
+  color: var(--bright-teal);
+}
+
+.recommended-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rec-opp-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px;
+}
+
+.rec-opp-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.org-logo-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--navy);
+  color: var(--bright-teal);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rec-opp-info h4 {
+  font-size: 1.08rem;
+  margin-bottom: 4px;
+}
+
+.rec-opp-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.rec-opp-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.rec-opp-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* Side Widgets */
+.dashboard-side-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.widget-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.activity-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.activity-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bright-teal);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.activity-text {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.activity-time {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}

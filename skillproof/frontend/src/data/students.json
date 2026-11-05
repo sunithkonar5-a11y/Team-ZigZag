@@ -1,0 +1,468 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Chen",
+    "github_username": "alexchen-dev",
+    "email": "alex.chen@berkeley.edu",
+    "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    "bio": "CS Junior at UC Berkeley passionate about full-stack web architectures, type safety, and reactive UI performance.",
+    "repos_analyzed": 14,
+    "skills": [
+      {
+        "name": "React",
+        "normalized_name": "react",
+        "level": "Advanced",
+        "confidence": 0.94,
+        "evidence": "Authored custom React 18 hooks with useTransition and Suspense in repo 'berkeley-scheduler' (280+ stars).",
+        "source": "github",
+        "category": "framework"
+      },
+      {
+        "name": "TypeScript",
+        "normalized_name": "typescript",
+        "level": "Advanced",
+        "confidence": 0.91,
+        "evidence": "Strict TypeScript codebase with complex generic utilities and zod schema validations in 'type-safe-query'.",
+        "source": "github",
+        "category": "language"
+      },
+      {
+        "name": "FastAPI",
+        "normalized_name": "fastapi",
+        "level": "Intermediate",
+        "confidence": 0.85,
+        "evidence": "Built asynchronous REST microservice backend with dependency injection and Pydantic v2 in 'campus-connect-api'.",
+        "source": "github",
+        "category": "framework"
+      },
+      {
+        "name": "PostgreSQL",
+        "normalized_name": "postgresql",
+        "level": "Intermediate",
+        "confidence": 0.82,
+        "evidence": "Designed schema migrations, indexing strategies, and complex joins using SQLAlchemy in production coursework.",
+        "source": "github",
+        "category": "tool"
+      },
+      {
+        "name": "Tailwind CSS",
+        "normalized_name": "tailwind css",
+        "level": "Advanced",
+        "confidence": 0.93,
+        "evidence": "Implemented accessible dark-mode UI design system and responsive grid layouts across 5 client projects.",
+        "source": "github",
+        "category": "framework"
+      },
+      {
+        "name": "Docker",
+        "normalized_name": "docker",
+        "level": "Intermediate",
+        "confidence": 0.78,
+        "evidence": "Multi-stage Dockerfile builds reducing artifact size by 65% in 'task-runner-lite'.",
+        "source": "github",
+        "category": "tool"
+      },
+      {
+        "name": "Python",
+        "normalized_name": "python",
+        "level": "Advanced",
+        "confidence": 0.92,
+        "evidence": "Implemented async data processing pipelines and backend microservices with FastAPI and SQLAlchemy.",
+        "source": "github",
+        "category": "language"
+      },
+      {
+        "name": "REST APIs",
+        "normalized_name": "rest apis",
+        "level": "Advanced",
+        "confidence": 0.90,
+        "evidence": "Designed OpenAPI compliant endpoints, JWT authentication, and pagination schemas.",
+        "source": "github",
+        "category": "architecture"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Priya Sharma",
+    "github_username": "priyasharma-ai",
+    "email": "priya.s@stanford.edu",
+    "avatar_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+    "bio": "AI/ML Graduate student at Stanford focusing on reasoning capabilities of LLMs and fine-tuning transformers.",
+    "repos_analyzed": 18,
+    "skills": [
+      {
+        "name": "Python",
+        "normalized_name": "python",
+        "level": "Advanced",
+        "confidence": 0.98,
+        "evidence": "5+ years of Python; authored PyTorch custom dataloaders and distributed training scripts with Accelerate.",
+        "source": "github",
+        "category": "language"
+      },
+      {
+        "name": "PyTorch",
+        "normalized_name": "pytorch",
+        "level": "Advanced",
+        "confidence": 0.92,
+        "evidence": "Implemented attention head pruning and LoRA adaptation modules in 'llm-lora-distill' (140+ stars).",
+        "source": "github",
+        "category": "framework"
+      },
+      {
+        "name": "Transformers",
+        "normalized_name": "transformers",
+        "level": "Advanced",
+        "confidence": 0.9,
+        "evidence": "Trained and evaluated Hugging Face transformer tokenizers and sequence classification models on multi-GPU cluster.",
+        "source": "github",
+        "category": "domain"
+      },
+      {
+        "name": "Large Language Models",
+        "normalized_name": "large language models",
+        "level": "Advanced",
+        "confidence": 0.95,
+        "evidence": "Co-authored conference pre-print on structured chain-of-thought verification; built automated evals suite.",
+        "source": "github",
+        "category": "domain"
+      },
+      {
+        "name": "LangChain",
+        "normalized_name": "langchain",
+        "level": "Intermediate",
+        "confidence": 0.83,
+        "evidence": "Constructed multi-turn retrieval-augmented generation (RAG) agent pipeline with ChromaDB vector search.",
+        "source": "github",
+        "category": "framework"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Marcus Vance",
+    "github_username": "mvance-sys",
+    "email": "mvance@cmu.edu",
+    "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+    "bio": "CMU Computer Engineering student specializing in OS kernels, concurrency primitives, and Rust systems tooling.",
+    "repos_analyzed": 22,
+    "skills": [
+      {
+        "name": "Rust",
+        "normalized_name": "rust",
+        "level": "Advanced",
+        "confidence": 0.93,
+        "evidence": "Created lock-free queue and async ring-buffer crate 'zen-ring' published on crates.io with 12k downloads.",
+        "source": "github",
+        "category": "language"
+      },
+      {
+        "name": "C++",
+        "normalized_name": "c++",
+        "level": "Advanced",
+        "confidence": 0.89,
+        "evidence": "Engineered multi-threaded game physics loop and memory arena allocator in modern C++20 for CMU 15-418.",
+        "source": "github",
+        "category": "language"
+      },
+      {
+        "name": "Docker",
+        "normalized_name": "docker",
+        "level": "Intermediate",
+        "confidence": 0.82,
+        "evidence": "Containerized cross-compilation toolchains targeting musl Linux and aarch64 architectures.",
+        "source": "github",
+        "category": "tool"
+      },
+      {
+        "name": "Linux",
+        "normalized_name": "linux",
+        "level": "Advanced",
+        "confidence": 0.91,
+        "evidence": "Kernel module patch contributor for eBPF packet tracing; deep proficiency in perf and gdb debugging.",
+        "source": "github",
+        "category": "tool"
+      },
+      {
+        "name": "Go",
+        "normalized_name": "go",
+        "level": "Intermediate",
+        "confidence": 0.79,
+        "evidence": "Authored CLI network diagnostic daemon utilizing goroutines and channels for packet sampling.",
+        "source": "github",
+        "category": "language"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Elena Rostova",
+    "github_username": "elena-ops",
+    "email": "elena.rostova@gatech.edu",
+    "avatar_url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80",
+    "bio": "Georgia Tech Cloud Systems senior. Cloud Infrastructure, Kubernetes custom controllers, and GitOps advocate.",
+    "repos_analyzed": 16,
+    "skills": [
+      {
+        "name": "Docker",
+        "normalized_name": "docker",
+        "level": "Advanced",
+        "confidence": 0.96,
+        "evidence": "Maintained Docker images for high-availability database replication cluster with automated security vulnerability scanning.",
+        "source": "github",
+        "category": "tool"
+      },
+      {
+        "name": "Kubernetes",
+        "normalized_name": "kubernetes",
+        "level": "Advanced",
+        "confidence": 0.92,
+        "evidence": "Authored custom Kubernetes CRD and Operator in Go for autoscaling ephemeral preview environments.",
+        "source": "github",
+        "category": "tool"
+      },
+      {
+        "name": "Go",
+        "normalized_name": "go",
+        "level": "Advanced",
+        "confidence": 0.88,
+        "evidence": "Engineered microservices communicating over gRPC with context timeouts and distributed tracing.",
+        "source": "github",
+        "category": "language"
+      },
+      {
+        "name": "CI/CD",
+        "normalized_name": "ci/cd",
+        "level": "Advanced",
+        "confidence": 0.94,
+        "evidence": "Architected reusable GitHub Actions workflows with matrix builds, caching, and automated semantic releases.",
+        "source": "github",
+        "category": "tool"
+      },
+      {
+        "name": "AWS",
+        "normalized_name": "aws",
+        "level": "Intermediate",
+        "confidence": 0.84,
+        "evidence": "Terraform provisioning for VPC, ECS Fargate, S3 lifecycle policies, and IAM role least-privilege policies.",
+        "source": "github",
+        "category": "tool"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Jordan Taylor",
+    "github_username": "jtaylor-code",
+    "email": "jordan.t@utexas.edu",
+    "avatar_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+    "bio": "UT Austin Mobile and Web developer with experience shipping 3 apps to the iOS App Store and Google Play Store.",
+    "repos_analyzed": 11,
+    "skills": [
+      {
+        "name": "React-Native",
+        "normalized_name": "react-native",
+        "level": "Advanced",
+        "confidence": 0.92,
+        "evidence": "Published 'FitTrack Mobile' with 15,000 monthly active users built in Expo React Native with Reanimated 3.",
+        "source": "github",
+        "category": "domain"
+      },
+      {
+        "name": "React",
+        "normalized_name": "react",
+        "level": "Advanced",
+        "confidence": 0.89,
+        "evidence": "Web dashboard companion for mobile app using React Query and optimistic cache rollbacks.",
+        "source": "github",
+        "category": "framework"
+      },
+      {
+        "name": "TypeScript",
+        "normalized_name": "typescript",
+        "level": "Intermediate",
+        "confidence": 0.85,
+        "evidence": "End-to-end typed contracts between React Native client and GraphQL backend with typegen.",
+        "source": "github",
+        "category": "language"
+      },
+      {
+        "name": "Tailwind CSS",
+        "normalized_name": "tailwind css",
+        "level": "Intermediate",
+        "confidence": 0.82,
+        "evidence": "Used NativeWind (Tailwind styling on mobile) for unified component library across web and iOS.",
+        "source": "github",
+        "category": "framework"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "David Kim",
+    "github_username": "dkim-backend",
+    "email": "dkim@uwaterloo.ca",
+    "avatar_url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80",
+    "bio": "University of Waterloo CS undergrad with previous co-ops in transactional banking systems and message brokers.",
+    "repos_analyzed": 19,
+    "skills": [
+      {
+        "name": "Python",
+        "normalized_name": "python",
+        "level": "Advanced",
+        "confidence": 0.91,
+        "evidence": "Engineered high-throughput event processing pipelines handling 10k events/sec with Celery and Redis.",
+        "source": "github",
+        "category": "language"
+      },
+      {
+        "name": "PostgreSQL",
+        "normalized_name": "postgresql",
+        "level": "Advanced",
+        "confidence": 0.93,
+        "evidence": "Deep knowledge of partition tables, connection pooling (PgBouncer), and index tuning with EXPLAIN ANALYZE.",
+        "source": "github",
+        "category": "tool"
+      },
+      {
+        "name": "Go",
+        "normalized_name": "go",
+        "level": "Intermediate",
+        "confidence": 0.84,
+        "evidence": "Built distributed rate limiter using token bucket algorithm and Redis sorted sets.",
+        "source": "github",
+        "category": "language"
+      },
+      {
+        "name": "Docker",
+        "normalized_name": "docker",
+        "level": "Intermediate",
+        "confidence": 0.87,
+        "evidence": "Production docker-compose orchestration with healthchecks, non-root users, and secret management.",
+        "source": "github",
+        "category": "tool"
+      },
+      {
+        "name": "REST APIs",
+        "normalized_name": "rest apis",
+        "level": "Advanced",
+        "confidence": 0.95,
+        "evidence": "Designed OpenAPI 3.0 compliant banking service endpoints with idempotency keys and rate limiting headers.",
+        "source": "github",
+        "category": "domain"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Maya Lin",
+    "github_username": "mayalin-tech",
+    "email": "mayalin@mit.edu",
+    "avatar_url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80",
+    "bio": "MIT EECS student passionate about AI applications, prompt engineering, and building user-centric AI interfaces.",
+    "repos_analyzed": 15,
+    "skills": [
+      {
+        "name": "Python",
+        "normalized_name": "python",
+        "level": "Advanced",
+        "confidence": 0.94,
+        "evidence": "Built AI agent framework with dynamic tool execution and fallback error correction in 'agent-weave'.",
+        "source": "github",
+        "category": "language"
+      },
+      {
+        "name": "FastAPI",
+        "normalized_name": "fastapi",
+        "level": "Advanced",
+        "confidence": 0.9,
+        "evidence": "Async streaming response endpoints with Server-Sent Events (SSE) for token-by-token LLM output.",
+        "source": "github",
+        "category": "framework"
+      },
+      {
+        "name": "React",
+        "normalized_name": "react",
+        "level": "Intermediate",
+        "confidence": 0.86,
+        "evidence": "Interactive conversational UI with markdown code rendering, copy widgets, and token usage meters.",
+        "source": "github",
+        "category": "framework"
+      },
+      {
+        "name": "Large Language Models",
+        "normalized_name": "large language models",
+        "level": "Advanced",
+        "confidence": 0.92,
+        "evidence": "Implemented few-shot prompting patterns, DSPy prompt optimization, and OpenAI/Claude structured JSON output.",
+        "source": "github",
+        "category": "domain"
+      },
+      {
+        "name": "Tailwind CSS",
+        "normalized_name": "tailwind css",
+        "level": "Intermediate",
+        "confidence": 0.85,
+        "evidence": "Polished responsive chat application UI with custom Tailwind animations and glassmorphism styling.",
+        "source": "github",
+        "category": "framework"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Samira Khan",
+    "github_username": "samirak-data",
+    "email": "samira.khan@illinois.edu",
+    "avatar_url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+    "bio": "UIUC Computer Science & Statistics junior. Open source contributor to data wrangling and ETL orchestration tools.",
+    "repos_analyzed": 17,
+    "skills": [
+      {
+        "name": "Python",
+        "normalized_name": "python",
+        "level": "Advanced",
+        "confidence": 0.93,
+        "evidence": "Engineered automated data pipelines parsing 500GB+ of open civic datasets using Polars and Pandas.",
+        "source": "github",
+        "category": "language"
+      },
+      {
+        "name": "PostgreSQL",
+        "normalized_name": "postgresql",
+        "level": "Advanced",
+        "confidence": 0.89,
+        "evidence": "Utilized PostGIS spatial extensions for GIS spatial join queries and heat map aggregations.",
+        "source": "github",
+        "category": "tool"
+      },
+      {
+        "name": "Docker",
+        "normalized_name": "docker",
+        "level": "Intermediate",
+        "confidence": 0.83,
+        "evidence": "Containerized multi-container Airflow development stack with automated DAG unit tests.",
+        "source": "github",
+        "category": "tool"
+      },
+      {
+        "name": "CI/CD",
+        "normalized_name": "ci/cd",
+        "level": "Intermediate",
+        "confidence": 0.84,
+        "evidence": "Automated pipeline validation with pre-commit hooks, ruff linting, and mypy static type analysis.",
+        "source": "github",
+        "category": "tool"
+      },
+      {
+        "name": "React",
+        "normalized_name": "react",
+        "level": "Beginner",
+        "confidence": 0.62,
+        "evidence": "Created simple data explorer dashboards with Chart.js and React hooks.",
+        "source": "github",
+        "category": "framework"
+      }
+    ]
+  }
+]

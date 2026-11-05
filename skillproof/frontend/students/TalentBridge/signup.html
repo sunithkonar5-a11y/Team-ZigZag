@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Account — TalentBridge</title>
+  <!-- Supports both folder structures automatically -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/auth.css" />
+</head>
+<body>
+
+  <div class="auth-split">
+    <!-- Left Branding & Visual Showcase Side -->
+    <div class="auth-visual-side">
+      <div class="auth-visual-inner">
+        <a href="index.html" class="brand-logo light">
+          <div class="logo-mark">TB</div>
+          Talent<span>Bridge</span>
+        </a>
+
+        <div class="auth-quote-box">
+          <h2>Build a Digital Portfolio That Speaks for Your Skills.</h2>
+          <p>Create your profile in under 2 minutes, highlight your projects, and connect with ambitious student builders and recruiters.</p>
+        </div>
+
+        <div class="auth-floating-cards">
+          <div class="afc-card">
+            <div class="afc-badge">Step 1 → Step 3</div>
+            <h4>Guided Student Onboarding</h4>
+            <p>Add your university, select skill chips, and link your GitHub projects effortlessly.</p>
+          </div>
+
+          <div class="afc-card">
+            <div class="afc-top-row">
+              <h4>Instant Skill Matching</h4>
+              <span class="afc-percent">✨ 90%+ Fit</span>
+            </div>
+            <p>Get matched with internships, hackathons, and projects tailored to your exact tech stack.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Signup Form Side -->
+    <div class="auth-form-side">
+      <div class="auth-form-container">
+        <a href="index.html" class="brand-logo auth-mobile-logo">
+          <div class="logo-mark">TB</div>
+          Talent<span>Bridge</span>
+        </a>
+
+        <div class="auth-header">
+          <h1>Create Your Account</h1>
+          <p>Start showcasing your skills and discovering matched opportunities.</p>
+        </div>
+
+        <form id="signupForm" novalidate>
+          <div class="form-group" id="nameGroup">
+            <label class="form-label" for="signupName">Full Name</label>
+            <input
+              type="text"
+              id="signupName"
+              class="form-control"
+              placeholder="e.g. Aarav Mehta"
+              required
+            />
+            <span class="form-error">Please enter your full name.</span>
+          </div>
+
+          <div class="form-group" id="signupEmailGroup">
+            <label class="form-label" for="signupEmail">University or Personal Email</label>
+            <input
+              type="email"
+              id="signupEmail"
+              class="form-control"
+              placeholder="you@university.edu"
+              required
+            />
+            <span class="form-error" id="signupEmailError">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-group" id="signupPasswordGroup">
+            <label class="form-label" for="signupPassword">Password</label>
+            <div class="password-input-wrap">
+              <input
+                type="password"
+                id="signupPassword"
+                class="form-control"
+                placeholder="Minimum 6 characters"
+                required
+              />
+              <button type="button" class="toggle-password" data-target="signupPassword">Show</button>
+            </div>
+            <span class="form-error">Password must be at least 6 characters.</span>
+          </div>
+
+          <div class="form-group" id="confirmPasswordGroup">
+            <label class="form-label" for="confirmPassword">Confirm Password</label>
+            <div class="password-input-wrap">
+              <input
+                type="password"
+                id="confirmPassword"
+                class="form-control"
+                placeholder="Re-enter your password"
+                required
+              />
+              <button type="button" class="toggle-password" data-target="confirmPassword">Show</button>
+            </div>
+            <span class="form-error">Passwords do not match.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Create Account</button>
+        </form>
+
+        <div class="auth-divider">
+          <span>OR</span>
+        </div>
+
+        <p class="auth-switch-text">
+          Already have an account? <a href="login.html">Log In</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+</html>

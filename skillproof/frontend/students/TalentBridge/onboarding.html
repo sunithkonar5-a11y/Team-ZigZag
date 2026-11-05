@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complete Your Profile — TalentBridge</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/onboarding.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/onboarding.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+  <div class="onboarding-wrapper">
+    <header class="onboarding-topbar">
+      <div class="container onboarding-topbar-inner">
+        <a href="index.html" class="brand-logo">
+          <div class="logo-mark">TB</div>
+          Talent<span>Bridge</span>
+        </a>
+        <a href="dashboard.html" class="btn btn-ghost btn-sm">Skip for now →</a>
+      </div>
+    </header>
+
+    <main class="container onboarding-main">
+      <!-- Progress Stepper -->
+      <div class="stepper-bar">
+        <div class="step-indicator active" data-step="1">
+          <span class="step-circle">1</span>
+          <span class="step-label">Personal Info</span>
+        </div>
+        <div class="step-connector" id="connector1"></div>
+        <div class="step-indicator" data-step="2">
+          <span class="step-circle">2</span>
+          <span class="step-label">Skills</span>
+        </div>
+        <div class="step-connector" id="connector2"></div>
+        <div class="step-indicator" data-step="3">
+          <span class="step-circle">3</span>
+          <span class="step-label">Projects & Links</span>
+        </div>
+      </div>
+
+      <div class="card onboarding-card">
+        <form id="onboardingForm" novalidate>
+
+          <!-- STEP 1: Personal Info -->
+          <div class="onboarding-step active" id="step1">
+            <div class="step-header">
+              <h2>Step 1: Personal & Academic Information</h2>
+              <p>Tell recruiters and fellow students who you are and where you study.</p>
+            </div>
+
+            <div class="avatar-upload-row">
+              <div class="avatar-preview" id="avatarPreview">SR</div>
+              <div>
+                <label for="avatarInput" class="btn btn-secondary btn-sm">Upload Profile Photo</label>
+                <input type="file" id="avatarInput" accept="image/*" hidden />
+                <p class="text-muted" style="font-size: 0.8rem; margin-top: 6px;">PNG or JPG recommended. Square ratio works best.</p>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="obName">Full Name</label>
+                <input type="text" id="obName" class="form-control" placeholder="Siddharth Roy" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="obCollege">College / University</label>
+                <input type="text" id="obCollege" class="form-control" placeholder="e.g. IIT Kharagpur" required />
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="obCourse">Course / Branch</label>
+                <input type="text" id="obCourse" class="form-control" placeholder="e.g. B.Tech Computer Science" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="obYear">Current Year</label>
+                <select id="obYear" class="form-control">
+                  <option value="1st Year">1st Year</option>
+                  <option value="2nd Year">2nd Year</option>
+                  <option value="3rd Year" selected>3rd Year</option>
+                  <option value="4th Year">4th Year</option>
+                  <option value="Postgraduate">Postgraduate</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="obLocation">Location</label>
+              <input type="text" id="obLocation" class="form-control" placeholder="e.g. Kalyani, India" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="obBio">Short Bio & Headline Goal</label>
+              <textarea id="obBio" rows="3" class="form-control" placeholder="Describe your passions, engineering interests, and the opportunities you are looking for..."></textarea>
+            </div>
+
+            <div class="step-actions right">
+              <button type="button" class="btn btn-primary btn-lg" id="toStep2Btn">Continue to Skills →</button>
+            </div>
+          </div>
+
+          <!-- STEP 2: Skills -->
+          <div class="onboarding-step" id="step2">
+            <div class="step-header">
+              <h2>Step 2: Select Your Skills</h2>
+              <p>Click suggested skill chips or add custom technologies to power your opportunity match score.</p>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Suggested Technical & Domain Skills</label>
+              <div class="selectable-chips" id="suggestedSkillsContainer">
+                <!-- Populated dynamically via onboarding.js -->
+              </div>
+            </div>
+
+            <div class="custom-skill-box">
+              <label class="form-label" for="customSkillInput">Add Custom Skill</label>
+              <div class="custom-skill-row">
+                <input type="text" id="customSkillInput" class="form-control" placeholder="e.g. TypeScript, Figma, Docker..." />
+                <button type="button" class="btn btn-secondary" id="addCustomSkillBtn">+ Add Skill</button>
+              </div>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-secondary" id="backToStep1Btn">← Back</button>
+              <button type="button" class="btn btn-primary btn-lg" id="toStep3Btn">Continue to Projects →</button>
+            </div>
+          </div>
+
+          <!-- STEP 3: Projects & Social Links -->
+          <div class="onboarding-step" id="step3">
+            <div class="step-header">
+              <h2>Step 3: Portfolio Links & Featured Project</h2>
+              <p>Connect your developer profiles and showcase a project you have built.</p>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="obGithub">GitHub Profile URL</label>
+                <input type="url" id="obGithub" class="form-control" placeholder="https://github.com/username" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="obLinkedin">LinkedIn Profile URL</label>
+                <input type="url" id="obLinkedin" class="form-control" placeholder="https://linkedin.com/in/username" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="obPortfolio">Personal Portfolio Website</label>
+              <input type="url" id="obPortfolio" class="form-control" placeholder="https://yourportfolio.dev" />
+            </div>
+
+            <div class="project-subcard">
+              <h4>Featured Student Project</h4>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="obProjTitle">Project Name</label>
+                  <input type="text" id="obProjTitle" class="form-control" placeholder="e.g. Smart Campus Navigator" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="obProjTech">Technologies Used (comma separated)</label>
+                  <input type="text" id="obProjTech" class="form-control" placeholder="HTML, CSS, JavaScript" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="obProjDesc">Short Description</label>
+                <textarea id="obProjDesc" rows="2" class="form-control" placeholder="What problem does this project solve and how did you build it?"></textarea>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="obProjGithub">GitHub Repository Link</label>
+                  <input type="url" id="obProjGithub" class="form-control" placeholder="https://github.com/..." />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="obProjDemo">Live Demo Link</label>
+                  <input type="url" id="obProjDemo" class="form-control" placeholder="https://..." />
+                </div>
+              </div>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-secondary" id="backToStep2Btn">← Back</button>
+              <button type="submit" class="btn btn-primary btn-lg">Complete Profile & Launch Dashboard</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/onboarding.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/onboarding.js"></script>
+</body>
+</html>
