@@ -1,7 +1,7 @@
 # SkillProof 🛡️⚡
 
 > **AI-Powered Student Skill Verification & Opportunity Matching Platform**  
-> Builds evidence-backed student skill profiles from public GitHub repository metadata and README excerpts, then matches students to internships, research roles, hackathons, and teammates.
+> Builds evidence-backed student skill profiles from public GitHub repository metadata and README excerpts, then matches students to internships, research roles, hackathons, & teammates.
 
 ---
 
