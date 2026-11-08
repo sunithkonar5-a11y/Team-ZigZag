@@ -48,4 +48,10 @@ dist-ssr/
 *.swo
 .DS_Store
 Thumbs.db
+generate_logos.py
+
+# Generated Logo Assets
+skillproof-*.png
+skillproof-*.svg
+skillproof/frontend/public/
 

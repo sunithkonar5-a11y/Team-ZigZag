@@ -58,3 +58,10 @@ mysql_data/
 .DS_Store
 Thumbs.db
 
+# Generated Logo Assets
+skillproof-*.png
+skillproof-*.svg
+frontend/public/
+generate_logos.py
+
+
